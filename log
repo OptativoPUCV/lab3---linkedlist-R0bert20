@@ -105,3 +105,13 @@ list.c:98:1: error: expected expression before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 fe8afd3
+Wed 27 Mar 2024 08:44:21 PM UTC: 
+ list.c | 1 -
+ 1 file changed, 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘pushCurrent’:
+list.c:97:1: error: expected expression before ‘}’ token
+   97 | }
+      | ^
+Compilation failed
+c50bf57
