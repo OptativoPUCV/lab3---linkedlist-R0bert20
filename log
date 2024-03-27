@@ -79,3 +79,29 @@ Wed 27 Mar 2024 08:39:20 PM UTC:
  tests:  10|2
 total_score: 45/70
 cb760ec
+Wed 27 Mar 2024 08:44:09 PM UTC: 
+ list.c | 11 ++---------
+ 1 file changed, 2 insertions(+), 9 deletions(-)
+In file included from test.c:5:
+list.c:93:5: error: data definition has no type or storage class [-Werror]
+   93 |     pushCurrent(list,data);
+      |     ^~~~~~~~~~~
+list.c:93:5: error: type defaults to ‘int’ in declaration of ‘pushCurrent’ [-Werror=implicit-int]
+list.c:93:5: error: parameter names (without types) in function declaration [-Werror]
+list.c:93:5: error: conflicting types for ‘pushCurrent’; have ‘int()’
+In file included from list.c:4,
+                 from test.c:5:
+list.h:20:6: note: previous declaration of ‘pushCurrent’ with type ‘void(List *, void *)’ {aka ‘void(struct List *, void *)’}
+   20 | void pushCurrent(List * list, void * data);
+      |      ^~~~~~~~~~~
+In file included from test.c:5:
+list.c:94:1: error: expected identifier or ‘(’ before ‘}’ token
+   94 | }
+      | ^
+list.c: In function ‘pushCurrent’:
+list.c:98:1: error: expected expression before ‘}’ token
+   98 | }
+      | ^
+cc1: all warnings being treated as errors
+Compilation failed
+fe8afd3
