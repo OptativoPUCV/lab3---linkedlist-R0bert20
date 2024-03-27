@@ -161,3 +161,25 @@ list.c:131:10: error: unused variable ‘data’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 99aa08b
+Wed 27 Mar 2024 08:56:16 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:131:10: error: unused variable ‘dato’ [-Werror=unused-variable]
+  131 |   void * dato = list->current->data;
+      |          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ca9de55
+Wed 27 Mar 2024 08:56:43 PM UTC: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:
+list.c: In function ‘popCurrent’:
+list.c:131:9: error: unused variable ‘dato’ [-Werror=unused-variable]
+  131 |   int * dato = list->current->data;
+      |         ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+ca9de55
