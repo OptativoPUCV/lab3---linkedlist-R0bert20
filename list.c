@@ -128,6 +128,8 @@ void * popCurrent(List * list) {
   if (list->current->next != NULL){
     list->current->next->prev = list->current->prev;
   }
+  void * data = list->current->data;
+  free(list->current);
     return NULL;
 }
 
