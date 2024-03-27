@@ -183,3 +183,8 @@ list.c:131:9: error: unused variable ‘dato’ [-Werror=unused-variable]
 cc1: all warnings being treated as errors
 Compilation failed
 ca9de55
+Wed 27 Mar 2024 08:57:16 PM UTC: 
+ list.c | 5 +++--
+ 1 file changed, 3 insertions(+), 2 deletions(-)
+ tests:  0|0
+de00671

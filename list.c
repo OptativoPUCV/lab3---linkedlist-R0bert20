@@ -128,9 +128,10 @@ void * popCurrent(List * list) {
   if (list->current->next != NULL){
     list->current->next->prev = list->current->prev;
   }
-  int * dato = list->current->data;
+  void * data = list->current->data;
   free(list->current);
-    return NULL;
+  list->current = NULL;
+  return data;
 }
 
 void cleanList(List * list) {
